@@ -11,7 +11,7 @@ def hitriiparser(inputstring: str):
         if inputstring[x] in moyaborba:
             if templist:
                 outlist.append(templist)
-                templist.clear()
+                templist = []
             outlist.append([inputstring[x]])
         else:
             templist.append(inputstring[x])
@@ -37,5 +37,5 @@ def hitriilisttostring(inputlist: list):
     return "".join(inputlist)
 
 
-instring = input('Enter some quote: ')
-print(hitriilisttostring(hitriishuffle(hitriiparser(instring))))
+# instring = input('Enter some quote: ')
+print(hitriilisttostring(hitriishuffle(hitriiparser("Съешь же ещё этих мягких французских булок-то, да выпей-ка 12345667"))))
