@@ -2,6 +2,7 @@ import string
 import random
 from copy import copy
 
+
 class MyMain:
     def __init__(self, inp: str):
         templist = []
